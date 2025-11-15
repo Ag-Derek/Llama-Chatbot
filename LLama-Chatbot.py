@@ -16,7 +16,7 @@ if not HF_API_KEY:
     st.stop()
 
 MODEL = "google/flan-t5-small"
-API_URL = f"https://router.huggingface.co/hf-inference/models/{MODEL}"
+API_URL = f"https://api-inference.huggingface.co/models/{MODEL}"
 HEADERS = {"Authorization": f"Bearer {HF_API_KEY}"}
 
 def ask_model(prompt: str):
