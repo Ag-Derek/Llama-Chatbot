@@ -15,7 +15,7 @@ if not HF_API_KEY:
     st.error("Please set HF_API_KEY as an environment variable.")
     st.stop()
 
-MODEL = "meta-llama/Llama-3.2-1B-Instruct"
+MODEL = "google/flan-t5-small"
 API_URL = f"https://router.huggingface.co/hf-inference/models/{MODEL}"
 HEADERS = {"Authorization": f"Bearer {HF_API_KEY}"}
 
